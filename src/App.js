@@ -14,7 +14,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/write" element={<WritePage />} />
-        <Route path="/@:username">
+        <Route path="/@/:username">
           <Route index element={<PostListPage />} />
           <Route path=":postId" element={<PostPage />} />
         </Route>
@@ -22,5 +22,5 @@ function App() {
     </>
   );
 }
-
+// http://localhost:3000/@1234/644146107a85703f7949e496
 export default App;
